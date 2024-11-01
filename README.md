@@ -7,12 +7,7 @@ Este é um projeto desenvolvido em **Next.js** com **React** que exibe informaç
 - [Visão Geral](#visão-geral)
 - [Pré-requisitos](#pré-requisitos)
 - [Instalação](#instalação)
-- [Configurações Adicionais](#configurações-adicionais)
-- [Scripts Disponíveis](#scripts-disponíveis)
-- [Documentação dos Componentes com Storybook](#documentação-dos-componentes-com-storybook)
-- [Rodando os Testes](#rodando-os-testes)
-- [Estrutura de Pastas](#estrutura-de-pastas)
-- [Considerações Finais](#considerações-finais)
+- [Documentação](#documentação)
 
 ---
 

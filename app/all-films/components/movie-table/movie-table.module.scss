@@ -1,0 +1,27 @@
+.tableResponsive {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.customTable {
+    width: 100%;
+
+    th, td {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .tableResponsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .customTable th,
+    .customTable td {
+        white-space: nowrap;
+        font-size: 0.9rem;
+    }
+}

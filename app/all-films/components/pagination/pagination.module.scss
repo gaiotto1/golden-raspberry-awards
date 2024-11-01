@@ -1,0 +1,22 @@
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .paginationCustom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  @media (max-width: 840px) {
+    .paginationCustom {
+      .page-item:first-child,
+      .page-item:last-child {
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+  }
+  

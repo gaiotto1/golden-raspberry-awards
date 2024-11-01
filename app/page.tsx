@@ -1,7 +1,5 @@
-export const metadata = {
-  title: "App Router",
-};
+import { redirect } from 'next/navigation';
 
-export default function Page() {
-  return <h1>App Router</h1>;
+export default function Home() {
+  redirect('/dashboard');
 }

@@ -1,35 +1,78 @@
-# Next.js + Jest
+# Projeto Golden Raspberry Awards 🎬
 
-This example shows how to configure Jest to work with Next.js.
+Este é um projeto desenvolvido em **Next.js** com **React** que exibe informações sobre filmes e prêmios da categoria de Pior Filme do Golden Raspberry Awards. A aplicação permite visualizar, filtrar e navegar por uma lista de filmes vencedores e indicados, com integração a uma API para obtenção de dados em tempo real.
 
-This includes Next.js' built-in support for Global CSS, CSS Modules and TypeScript. This example also shows how to use Jest with the App Router and React Server Components.
+## Sumário
 
-> **Note:** Since tests can be co-located alongside other files inside the App Router, we have placed those tests in `app/` to demonstrate this behavior (which is different than `pages/`). You can still place all tests in `__tests__` if you prefer.
+- [Visão Geral](#visão-geral)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Configurações Adicionais](#configurações-adicionais)
+- [Scripts Disponíveis](#scripts-disponíveis)
+- [Documentação dos Componentes com Storybook](#documentação-dos-componentes-com-storybook)
+- [Rodando os Testes](#rodando-os-testes)
+- [Estrutura de Pastas](#estrutura-de-pastas)
+- [Considerações Finais](#considerações-finais)
 
-## Deploy your own
+---
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-jest&project-name=with-jest&repository-name=with-jest)
+## Visão Geral
 
-## How to Use
+Esta aplicação foi desenvolvida para oferecer uma interface de fácil uso onde os usuários podem:
 
-Quickly get started using [Create Next App](https://github.com/vercel/next.js/tree/canary/packages/create-next-app#readme)!
+- Filtrar filmes por ano e status de vencedor.
+- Navegar entre as páginas de filmes.
+- Visualizar detalhes sobre estúdios, produtores e anos com múltiplos vencedores.
+- Consultar uma documentação completa dos componentes através do Storybook.
 
-In your terminal, run the following command:
+## Pré-requisitos
+
+Certifique-se de ter o **Node.js** e **npm** (ou **yarn**) instalados. Você pode verificar a instalação usando:
 
 ```bash
-npx create-next-app --example with-jest with-jest-app
+node -v
+npm -v
+# ou
+yarn -v
 ```
+
+## Instalação
+
+Para configurar e rodar o projeto localmente, siga os passos abaixo.
+
+### 1. Clonar o Repositório
+
+Primeiro, clone o repositório para o seu ambiente local:
 
 ```bash
-yarn create next-app --example with-jest with-jest-app
+git clone https://github.com/gaiotto1/golden-raspberry-awards
+cd golden-raspberry-awards
 ```
+
+### 2. Instalar as depêndencias
 
 ```bash
-pnpm create next-app --example with-jest with-jest-app
+npm install
+# ou
+yarn
 ```
 
-## Running Tests
+### 3. Iniciando o projeto
 
 ```bash
-npm test
+npm run dev
+# ou
+yarn dev
 ```
+
+## Documentação
+
+A documentação pode ser acessada através do storybook, pelo comando abaixo:
+
+```bash
+npm run storybook
+# ou
+yarn storybook
+```
+
+O Storybook estará disponível em http://localhost:6006

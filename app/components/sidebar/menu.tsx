@@ -5,22 +5,22 @@ import { useState, useEffect } from 'react';
 import styles from './menu.module.scss';
 
 const Menu = () => {
-  const [isCollapsed, setIsCollapsed] = useState(window.innerWidth < 900);
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
+  useEffect(() => {
+    const checkWindowWidth = () => {
+      setIsCollapsed(window.innerWidth < 900);
+    };
+
+    checkWindowWidth();
+    window.addEventListener('resize', checkWindowWidth);
+    
+    return () => window.removeEventListener('resize', checkWindowWidth);
+  }, []);
 
   const toggleMenu = () => {
     setIsCollapsed(!isCollapsed);
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 900) {
-        setIsCollapsed(true);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   return (
     <aside className={`${styles.menu} ${isCollapsed ? styles.collapsed : ''}`}>
